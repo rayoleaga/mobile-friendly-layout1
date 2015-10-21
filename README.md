@@ -8,4 +8,5 @@ A mobile friendly layout well suited for an online magazine
   <li>LESS<li>
 </ul>
 
-Photo Used from: http://foter.com/
+<p><a href="http://yourdesignbuddy.com/mobile-layout-1/"> Live Demo</a></p>
+Photo Used from: <a href="http://foter.com/">http://foter.com</a>
