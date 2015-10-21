@@ -1,0 +1,248 @@
+/* ==========================================================================
+   INDEX
+   ========================================================================== */
+/* ==========================================================================
+   COLOR SCHEME
+   ========================================================================== */
+/* #F2D653 yellow*/
+/* #434345 dark-grey*/
+/* #fff white*/
+/* #000 black*/
+/* ==========================================================================
+LAYOUTS
+========================================================================== */
+/* ==========================================================================
+TYPE
+========================================================================== */
+/* ==========================================================================
+MIXINGS
+========================================================================== */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+.invisible {
+  visibility: hidden;
+}
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+.center {
+  text-align: center;
+  margin: 0 auto;
+}
+/* ==========================================================================
+GENERAL
+========================================================================== */
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+textarea {
+  resize: vertical;
+}
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+.center {
+  text-align: center;
+  margin: 0 auto;
+}
+.bg-grey {
+  background-color: #434345;
+  height: 100vh;
+}
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+.main-container {
+  max-width: 960px;
+  padding: 20px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #434345;
+}
+.main-container h1 {
+  color: #F2D653;
+  font-family: 'Great Vibes', cursive;
+  font-size: 5.2em;
+}
+.main-container p {
+  color: #fff;
+  font-family: 'Muli', sans-serif;
+  text-align: left;
+}
+.main-image {
+  background: url(../img/main.jpeg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 500px;
+}
+.view-lg {
+  display: none !important;
+  visibility: hidden;
+}
+/* ==========================================================================
+   Media Queries
+      1360
+   1024
+   768
+   480
+   320
+   240
+   ========================================================================== */
+@media only screen and (min-width: 768px) {
+  .view-lg {
+    display: inline-block !important;
+    visibility: visible !important;
+    max-width: 200px;
+    float: right;
+    text-align: justify;
+    background-color: #434345;
+    height: 100vh;
+  }
+  .view-sm {
+    display: none !important;
+    visibility: hidden;
+  }
+  .main-image {
+    background: url(../img/KL-cover.jpg) no-repeat left center relative;
+    background-size: cover;
+    height: 100vh !important;
+    background-color: #000;
+  }
+  .main-container {
+    overflow: scroll;
+  }
+  .main-container h1 {
+    text-align: justify;
+    font-size: 3.2em;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .main-container p {
+    color: #fff;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .view-lg {
+    max-width: 400px;
+  }
+  .main-container h1 {
+    font-size: 5.2em;
+  }
+}
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
